@@ -1,20 +1,18 @@
 const assert = require('assert')
 class homePage {
   
-    get contactusLink() {return $('=Contact us');}
-
-    gotocontactus(){
-    this.contactusLink.click();
-    
-    
-    }
+    get searchfield() {return $('#searchInput');}
 
     verifytitle(){
     const title = browser.getTitle();
     //console.log(title);
-    assert.equal(title,'My Store');
+    assert.equal(title,'Wikipedia');
     }
 
+    enterserachdata(){
+
+        this.searchfield.setValue("furry rabbits")
+    }
     
 }
     module.exports = new homePage();

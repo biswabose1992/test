@@ -1,17 +1,25 @@
 const assert = require('assert')
+const testadata=require("./../data/testdata.json")
+
 class homePage {
   
     get searchfield() {return $('#searchInput');}
+    get searchbutton() {return $('//button[@type="submit"]');}
+   
 
     verifytitle(){
     const title = browser.getTitle();
-    //console.log(title);
     assert.equal(title,'Wikipedia');
     }
 
     enterserachdata(){
+        
+        this.searchfield.setValue(testadata.value)     
+    }
 
-        this.searchfield.setValue("furry rabbits")
+    clicksearchbutton(){
+
+        this.searchbutton.click();
     }
     
 }

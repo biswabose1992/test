@@ -3,8 +3,6 @@ node_modules/*
 reports
 reports/*
 screenshots/*
-screenshots/.gitkeep
-screenshots/failedtestcases/*
-!screenshots/failedtestcases/.gitkeep
+!screenshots/.gitkeep
 .DS_Store
 .DS_Store/*

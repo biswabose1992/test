@@ -26,16 +26,15 @@ Then ('Do you mean suggestion should appear',function(){
 })
 
 
-Then ('I click on the suggestion',function(){
+Then ('I click on the suggestion',function(){
 
     searchPage.clicksuggestion();
     
 })
 
-Then ('{int} search results shoud appear',function(int){
+Then ('{int} search results should appear',function(int){
 
-    searchPage.verifyserachresultcount();
-   
+    searchPage.verifyserachresultcount(int);
     
 })
 
@@ -43,4 +42,5 @@ Then ('{int} search results shoud appear',function(int){
 Then ('I click on first search result to verify article title and contents',function(){
 
     searchPage.verifyfirstarticle();
+    
 })

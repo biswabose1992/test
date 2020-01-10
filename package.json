@@ -30,6 +30,8 @@
     "multiple-cucumber-html-reporter": "^1.13.2",
     "wdio-allure-reporter": "^0.8.3",
     "wdio-chromedriver-service": "^5.0.2",
-    "wdio-cucumberjs-json-reporter": "^1.1.1"
+    "wdio-cucumberjs-json-reporter": "^1.1.1",
+    "wdio-intercept-service": "^3.1.0",
+    "webdriverajax": "^2.2.0"
   }
 }
